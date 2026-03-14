@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA </title>
+    <style>
+        #calculadora {
+            padding: 20px;
+            margin: 100px auto;
+            width: 300px;
+            border: 1px solid #ccc;
+            display: block;
+            border-radius: 10px;
+        }
+         button {
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+            margin: 5px;
+        }
+         #pantalla {
+            width: 35%;
+            height: 40px;
+            font-size: 18px;
+            text-align: right;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<div id="calculadora">
+
+    <h1>Calculadora</h1>
+    <input type="text" id="pantalla" onchange="cambio()">
+    <br></br>
+    <button id="7" onclick="mostrar('7')" onmouseover="pasar()" onmouseout="fuera()">7</button>
+    <button id="8" onclick="mostrar('8')" onmousedown="presionar()" onmouseup="soltar()">8</button>
+    <button id="9" onclick="mostrar('9')" ondblclick="doble()">9</button>
+    <button id="-" onclick="mostrar('-')" onmouseover="pasar_()" onmouseout="fuera_()">-</button>
+    <br></br>
+    <button id="4" onclick="mostrar('4')" onmousedown="presionar_()" onmouseup="soltar_()">4</button>
+    <button id="5" onclick="mostrar('5')" ondblclick="doble_()">5</button>
+    <button id="6" onclick="mostrar('6')" onmouseover="pasar_b()" onmouseout="fuera_b()">6</button>
+    <button id="+" onclick="mostrar('+')" onmousedown="presionar_b()" onmouseup="soltar_b()">+</button>
+    <br></br>
+    <button id="1" onclick="mostrar('1')" ondblclick="doble_b()">1</button>
+    <button id="2" onclick="mostrar('2')" onmouseover="pasar_a()" onmouseout="fuera_a()">2</button>
+    <button id="3" onclick="mostrar('3')" onmousedown="presionar_a()" onmouseup="soltar_a()">3</button>
+    <button id="*" onclick="mostrar('*')" ondblclick="doble_a()">*</button>
+    <br></br>
+    <button id="0" onclick="mostrar('0')" onmouseover="pasar_c()" onmouseout="fuera_c()">0</button>
+    <button id="00" onclick="mostrar('00')" onmousedown="presionar_c()" onmouseup="soltar_c()">00</button>
+    <button id="=" onclick="mostrar('=')" ondblclick="doble_c()">=</button>
+    <button id="/" onclick="mostrar('/')" onmouseover="pasar_d()" onmouseout="fuera_d()">/</button>
+    <br></br>
+    <button id="c" onclick="borrar()" onmousedown="presionar_d()" onmouseup="soltar_d()">c</button>
+</div>
+
+<p></p>
+
+    <body>
+</body>
+
+    <script src="./Calculadora.js"></script>
+</body>
+</html>
